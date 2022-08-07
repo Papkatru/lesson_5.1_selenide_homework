@@ -4,7 +4,8 @@ public class GithubPage {
 
     public static void openWikiPage(){
         GithubElements.wikiTab.click();
-        GithubElements.wikiBody.shouldHave(text("Soft assertions"));
+        GithubElements.showMorePages.click();
+        GithubElements.pagesList.shouldHave(text("SoftAssertions"));
     }
 
     public static void openSoftAssertionPage(){
